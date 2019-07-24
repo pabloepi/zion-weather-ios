@@ -16,7 +16,7 @@ class WeatherStore: NSObject {
     private static let key = "6c01041e3731f8813ce81a2b03405e95"
 
     class func weather(coordinate: CLLocationCoordinate2D, completion: WeatherStoreBlock?) {
-        let path = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&APPID=\(key)"
+        let path = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinate.latitude)&&units=metric&lon=\(coordinate.longitude)&APPID=\(key)"
         let url = URL(string: path)!
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard error == nil else {
