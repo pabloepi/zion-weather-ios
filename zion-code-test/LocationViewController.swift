@@ -20,7 +20,7 @@ class LocationViewController: UIViewController {
     }
 
     override func updateViewConstraints() {
-        stackView.toSuperviewBounds(topAnchorConstant: 24.0, bottomAnchorConstant: view.bounds.height/2, leadingAnchorConstant: 24.0, trailingAnchorConstant: 24.0)
+        stackView.toSuperviewBounds(topAnchorConstant: 24.0, bottomAnchorConstant: -view.bounds.height/2, leadingAnchorConstant: 24.0, trailingAnchorConstant: -24.0)
         super.updateViewConstraints()
     }
 
@@ -30,12 +30,13 @@ class LocationViewController: UIViewController {
         title = NSLocalizedString("Weather", comment: "")
         view.backgroundColor = .white
 
+        let font = UIFont.systemFont(ofSize: 34, weight: UIFont.Weight.semibold)
         let labelDescription = UILabel()
         let labelTemperature = UILabel()
         let labelHumidity = UILabel()
-        labelDescription.font = UIFont.systemFont(ofSize: 34, weight: UIFont.Weight.semibold)
-        labelTemperature.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.semibold)
-        labelHumidity.font = UIFont.systemFont(ofSize: 24, weight: UIFont.Weight.semibold)
+        labelDescription.font = font
+        labelTemperature.font = font
+        labelHumidity.font = font
         labelDescription.text = location.weather.description
         labelTemperature.text = location.weather.temp
         labelHumidity.text = location.weather.humidity != nil ? "\(location.weather.humidity!) %" : "No humidity"
@@ -44,7 +45,7 @@ class LocationViewController: UIViewController {
         stackView = UIStackView(arrangedSubviews: array)
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
-        stackView.alignment = .center
+        stackView.alignment = .leading
         stackView.spacing = 0
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.backgroundColor = .white
