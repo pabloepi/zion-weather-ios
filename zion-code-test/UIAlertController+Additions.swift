@@ -16,6 +16,10 @@ extension UIAlertController {
         return alert("There was an error while getting your current location.", nil, "Ok", callHandler)
     }
 
+    class func weatherErrorAlert(callHandler: AlertActionBlock?) -> UIAlertController {
+        return alert("There was an error while getting the weather for those coordinates.", nil, "Ok", callHandler)
+    }
+
     class func blockedFeatureAlert(_ blockedFeature: String) -> UIAlertController {
         let title = NSLocalizedString("\(Constants.Product.name) does not have access to your \(blockedFeature).", comment: "")
         let message = NSLocalizedString("Would you like to grant access?", comment: "")

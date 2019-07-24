@@ -17,6 +17,9 @@
 		6E17B26C22E8B90700539343 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E17B26B22E8B90700539343 /* Constants.swift */; };
 		6E17B26E22E8B98C00539343 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E17B26D22E8B98C00539343 /* CustomError.swift */; };
 		6E17B27022E8BBCC00539343 /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E17B26F22E8BBCC00539343 /* UIAlertController+Additions.swift */; };
+		6E17B27222E8C74900539343 /* LocationCacheController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E17B27122E8C74900539343 /* LocationCacheController.swift */; };
+		6E17B27422E8C91C00539343 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E17B27322E8C91C00539343 /* WeatherStore.swift */; };
+		6E17B27622E8CCD400539343 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E17B27522E8CCD400539343 /* Weather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		6E17B26B22E8B90700539343 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6E17B26D22E8B98C00539343 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		6E17B26F22E8BBCC00539343 /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
+		6E17B27122E8C74900539343 /* LocationCacheController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCacheController.swift; sourceTree = "<group>"; };
+		6E17B27322E8C91C00539343 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
+		6E17B27522E8CCD400539343 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +76,14 @@
 				6E17B26D22E8B98C00539343 /* CustomError.swift */,
 				6E17B25D22E8B45D00539343 /* Info.plist */,
 				6E17B25A22E8B45D00539343 /* LaunchScreen.storyboard */,
+				6E17B27122E8C74900539343 /* LocationCacheController.swift */,
 				6E17B26922E8B8D800539343 /* LocationController.swift */,
 				6E17B26722E8B74E00539343 /* LocationViewController.swift */,
 				6E17B26322E8B5D700539343 /* MapViewController.swift */,
 				6E17B26F22E8BBCC00539343 /* UIAlertController+Additions.swift */,
 				6E17B26522E8B66A00539343 /* UIView+Additions.swift */,
+				6E17B27522E8CCD400539343 /* Weather.swift */,
+				6E17B27322E8C91C00539343 /* WeatherStore.swift */,
 			);
 			path = "zion-code-test";
 			sourceTree = "<group>";
@@ -154,14 +163,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E17B27422E8C91C00539343 /* WeatherStore.swift in Sources */,
 				6E17B27022E8BBCC00539343 /* UIAlertController+Additions.swift in Sources */,
 				6E17B26E22E8B98C00539343 /* CustomError.swift in Sources */,
+				6E17B27622E8CCD400539343 /* Weather.swift in Sources */,
 				6E17B26622E8B66A00539343 /* UIView+Additions.swift in Sources */,
 				6E17B25222E8B45B00539343 /* AppDelegate.swift in Sources */,
 				6E17B26422E8B5D700539343 /* MapViewController.swift in Sources */,
 				6E17B26A22E8B8D800539343 /* LocationController.swift in Sources */,
 				6E17B26822E8B74E00539343 /* LocationViewController.swift in Sources */,
 				6E17B26C22E8B90700539343 /* Constants.swift in Sources */,
+				6E17B27222E8C74900539343 /* LocationCacheController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
