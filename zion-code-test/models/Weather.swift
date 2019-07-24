@@ -10,8 +10,8 @@ import Foundation
 
 struct Weather {
 
-    let description: String?
-    let temp: String?
+    let description: String
+    let temp: String
     let humidity: Int?
 
     init?(dictionary: Dictionary) {
@@ -28,7 +28,7 @@ struct Weather {
             let measurement = Measurement(value: temperature, unit: UnitTemperature.celsius)
             temp = formatter.string(from: measurement)
         } else {
-            temp = "no temperature"
+            temp = "No temperature"
         }
     }
 

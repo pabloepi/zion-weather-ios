@@ -38,8 +38,8 @@ class LocationViewController: UIViewController {
         labelTemperature.font = font
         labelHumidity.font = font
         labelDescription.text = location.weather.description
-        labelTemperature.text = location.weather.temp
-        labelHumidity.text = location.weather.humidity != nil ? "\(location.weather.humidity!) %" : "No humidity"
+        labelTemperature.text = "Temp: " + location.weather.temp
+        labelHumidity.text = location.weather.humidity != nil ? "Humidity: \(location.weather.humidity!) %" : "Humidity: No humidity"
         let array = [labelDescription, labelTemperature, labelHumidity]
 
         stackView = UIStackView(arrangedSubviews: array)
