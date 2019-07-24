@@ -25,7 +25,7 @@ struct Weather {
         humidity = main["humidity"] as? Int
         if let temperature = main["temp"] as? Double {
             let formatter = MeasurementFormatter()
-            let measurement = Measurement(value: temperature, unit: UnitTemperature.celsius)
+            let measurement = Measurement(value: temperature, unit: UnitTemperature.fahrenheit)
             temp = formatter.string(from: measurement)
         } else {
             temp = "no temperature"

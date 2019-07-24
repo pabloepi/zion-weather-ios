@@ -71,21 +71,77 @@
 			isa = PBXGroup;
 			children = (
 				6E17B25122E8B45B00539343 /* AppDelegate.swift */,
-				6E17B25822E8B45D00539343 /* Assets.xcassets */,
-				6E17B26B22E8B90700539343 /* Constants.swift */,
-				6E17B26D22E8B98C00539343 /* CustomError.swift */,
-				6E17B25D22E8B45D00539343 /* Info.plist */,
-				6E17B25A22E8B45D00539343 /* LaunchScreen.storyboard */,
-				6E17B27122E8C74900539343 /* LocationCacheController.swift */,
-				6E17B26922E8B8D800539343 /* LocationController.swift */,
-				6E17B26722E8B74E00539343 /* LocationViewController.swift */,
-				6E17B26322E8B5D700539343 /* MapViewController.swift */,
-				6E17B26F22E8BBCC00539343 /* UIAlertController+Additions.swift */,
-				6E17B26522E8B66A00539343 /* UIView+Additions.swift */,
-				6E17B27522E8CCD400539343 /* Weather.swift */,
-				6E17B27322E8C91C00539343 /* WeatherStore.swift */,
+				6E17B27B22E8DCE000539343 /* controllers */,
+				6E17B27C22E8DCE200539343 /* extensions */,
+				6E17B27D22E8DD0800539343 /* helpers */,
+				6E17B27922E8DCDD00539343 /* models */,
+				6E17B27722E8DCD800539343 /* resources */,
+				6E17B27A22E8DCDE00539343 /* stores */,
+				6E17B27822E8DCDB00539343 /* view controllers */,
 			);
 			path = "zion-code-test";
+			sourceTree = "<group>";
+		};
+		6E17B27722E8DCD800539343 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B25822E8B45D00539343 /* Assets.xcassets */,
+				6E17B25D22E8B45D00539343 /* Info.plist */,
+				6E17B25A22E8B45D00539343 /* LaunchScreen.storyboard */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6E17B27822E8DCDB00539343 /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B26722E8B74E00539343 /* LocationViewController.swift */,
+				6E17B26322E8B5D700539343 /* MapViewController.swift */,
+			);
+			path = "view controllers";
+			sourceTree = "<group>";
+		};
+		6E17B27922E8DCDD00539343 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B27522E8CCD400539343 /* Weather.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		6E17B27A22E8DCDE00539343 /* stores */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B27322E8C91C00539343 /* WeatherStore.swift */,
+			);
+			path = stores;
+			sourceTree = "<group>";
+		};
+		6E17B27B22E8DCE000539343 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B27122E8C74900539343 /* LocationCacheController.swift */,
+				6E17B26922E8B8D800539343 /* LocationController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		6E17B27C22E8DCE200539343 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B26F22E8BBCC00539343 /* UIAlertController+Additions.swift */,
+				6E17B26522E8B66A00539343 /* UIView+Additions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		6E17B27D22E8DD0800539343 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6E17B26B22E8B90700539343 /* Constants.swift */,
+				6E17B26D22E8B98C00539343 /* CustomError.swift */,
+			);
+			path = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,7 +370,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VCHDS2F27;
-				INFOPLIST_FILE = "zion-code-test/Info.plist";
+				INFOPLIST_FILE = "zion-code-test/resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,7 +390,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VCHDS2F27;
-				INFOPLIST_FILE = "zion-code-test/Info.plist";
+				INFOPLIST_FILE = "zion-code-test/resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
