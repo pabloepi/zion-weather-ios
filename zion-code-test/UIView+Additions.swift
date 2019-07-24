@@ -10,16 +10,20 @@ import UIKit
 
 extension UIView {
 
-    func toSuperviewBounds(constant: CGFloat?) {
+    func toSuperviewBounds() {
+        toSuperviewBounds(topAnchorConstant: 0.0, bottomAnchorConstant: 0.0, leadingAnchorConstant: 0.0, trailingAnchorConstant: 0.0)
+    }
+
+    func toSuperviewBounds(topAnchorConstant: CGFloat, bottomAnchorConstant: CGFloat, leadingAnchorConstant: CGFloat, trailingAnchorConstant: CGFloat) {
         guard let superview = self.superview else {
             print("`superview` was nil – call `addSubview(view: UIView)` before calling `bindFrameToSuperviewBounds()` to fix this.")
             return
         }
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: superview.topAnchor, constant: constant ?? 0).isActive = true
-        bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: constant ?? 0).isActive = true
-        leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: constant ?? 0).isActive = true
-        trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: constant ?? 0).isActive = true
+        topAnchor.constraint(equalTo: superview.topAnchor, constant: topAnchorConstant).isActive = true
+        bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: bottomAnchorConstant).isActive = true
+        leadingAnchor.constraint(equalTo: superview.leadingAnchor, constant: leadingAnchorConstant).isActive = true
+        trailingAnchor.constraint(equalTo: superview.trailingAnchor, constant: trailingAnchorConstant).isActive = true
     }
 
 }

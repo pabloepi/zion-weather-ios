@@ -30,7 +30,7 @@ class MapViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 
     override func updateViewConstraints() {
-        mapView.toSuperviewBounds(constant: nil)
+        mapView.toSuperviewBounds()
         super.updateViewConstraints()
     }
 

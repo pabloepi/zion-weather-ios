@@ -20,7 +20,7 @@ class LocationViewController: UIViewController {
     }
 
     override func updateViewConstraints() {
-        stackView.toSuperviewBounds(constant: nil)
+        stackView.toSuperviewBounds(topAnchorConstant: 24.0, bottomAnchorConstant: view.bounds.height/2, leadingAnchorConstant: 24.0, trailingAnchorConstant: 24.0)
         super.updateViewConstraints()
     }
 
@@ -44,8 +44,8 @@ class LocationViewController: UIViewController {
         stackView = UIStackView(arrangedSubviews: array)
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
-        stackView.alignment = .fill
-        stackView.spacing = 5
+        stackView.alignment = .center
+        stackView.spacing = 0
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.backgroundColor = .white
         view.addSubview(stackView)

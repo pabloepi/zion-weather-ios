@@ -21,7 +21,7 @@ struct Weather {
         guard let weather = dictionary["weather"] as? [Dictionary] else {
             return nil
         }
-        description = weather.first?["description"] as? String ?? "No description"
+        description = (weather.first?["description"] as? String)?.capitalized ?? "No description"
         humidity = main["humidity"] as? Int
         if let temperature = main["temp"] as? Double {
             let formatter = MeasurementFormatter()
